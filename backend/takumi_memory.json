@@ -1,0 +1,19 @@
+{
+  "endpoints": [
+    {
+      "method": "POST",
+      "url": "/api/keys",
+      "description": "Generate a new monitoring key."
+    },
+    {
+      "method": "POST",
+      "url": "/api/track",
+      "description": "Record a monitoring event."
+    },
+    {
+      "method": "GET",
+      "url": "/api/dashboard/<key>",
+      "description": "Retrieve recent events and aggregated stats for a key."
+    }
+  ]
+}
