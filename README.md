@@ -17,7 +17,8 @@ A no-auth monitoring dashboard that lets users generate a unique API key, track 
 - Real-time updates (polling/SSE).
 
 ---
-[Dash](/frontend/public/Dash.png)
+
+![Dash](/frontend/public/Dash.png)
 
 ## 🛠️ Tech Stack
 
