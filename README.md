@@ -17,6 +17,7 @@ A no-auth monitoring dashboard that lets users generate a unique API key, track 
 - Real-time updates (polling/SSE).
 
 ---
+[Dash](/frontend/public/Dash.png)
 
 ## 🛠️ Tech Stack
 
@@ -89,7 +90,7 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      '/api': 'http://localhost:3000'
+      '/api': 'http://localhost:5000'
     }
   }
 })
@@ -99,7 +100,7 @@ Start the frontend:
 ```bash
 npm run dev
 ```
-The frontend will run on **port 5173** (Vite default). API calls from the frontend will be proxied to the backend at `http://localhost:3000/api/...`.
+The frontend will run on **port 5173** (Vite default). API calls from the frontend will be proxied to the backend at `http://localhost:5000/api/...`.
 
 ### 4. Access the App
 Open your browser and go to `http://localhost:5173`.
