@@ -79,8 +79,8 @@ migrations/
 - **Node.js >=18**, npm/yarn. Run `cd frontend && npm install` to install React+Vite dependencies.
 - **Python >=3.10** with virtual environment. Install backend packages: `pip install Flask Flask-SQLAlchemy python-dotenv`.
 - Set `DATABASE_URL=sqlite:///instance/openclaw.db` in `.env`. Ensure the `instance/` folder exists for SQLite files.
-- Start backend with `python backend/app.py` (listens on port 3000).
-- Start frontend with `npm run dev` (default Vite port 3000). Backend and frontend share the same port via Flask's `app.run(port=3000)`.
+- Start backend with `python backend/app.py` (listens on port 5000).
+- Start frontend with `npm run dev` (default Vite port 5000). Backend and frontend share the same port via Flask's `app.run(port=5000)`.
 
 **Code Boilerplate:**
 
@@ -200,7 +200,7 @@ def dashboard(key):
 if __name__ == '__main__':
     with flask_app.app_context():
         db.create_all()
-    flask_app.run(host='0.0.0.0', port=3000)
+    flask_app.run(host='0.0.0.0', port=5000)
 ```
 
 - **frontend/services/api.js**
