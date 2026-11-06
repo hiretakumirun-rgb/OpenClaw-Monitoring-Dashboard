@@ -74,7 +74,7 @@ Initialize the database (tables are created automatically on first run, but you 
 ```bash
 python app.py
 ```
-The backend will start on **port 3000**.
+The backend will start on **port 5000**.
 
 ### 3. Frontend Setup
 ```bash
